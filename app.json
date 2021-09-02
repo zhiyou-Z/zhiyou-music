@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/video/video",
+    "pages/presonal/presonal",
+    "pages/recommendSong/recommendSong",
+    "pages/songDetail/songDetail",
+    "conponents/navigation-bar/navigationBar"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTitleText": "之尤云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d43c33",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/iconfont/shouye_1.png",
+        "selectedIconPath": "/static/iconfont/shouye.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "/static/iconfont/shipin.png",
+        "selectedIconPath": "/static/iconfont/shipin_1.png"
+      },
+      {
+        "pagePath": "pages/presonal/presonal",
+        "text": "个人",
+        "iconPath": "/static/iconfont/iconfront-.png",
+        "selectedIconPath": "/static/iconfont/gerenzhongxin.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": ["audio"]
+}

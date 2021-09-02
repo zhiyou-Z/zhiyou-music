@@ -1,0 +1,103 @@
+/* pages/video/video.wxss */
+/* 头部搜索区 */
+.videoContainer .header{
+  display: flex;
+  padding: 10rpx;
+}
+.videoContainer .header image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.videoContainer .header .search{
+  border:1px solid #eee;
+  border-radius: 7px;
+  flex: 1;
+  margin: 0 20rpx;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: #aaa;
+}
+/* 导航区域 */
+.navScroll{
+  display: flex;
+  white-space: nowrap;
+  height: 62rpx;
+}
+.navScroll .navItem{
+  padding: 0 30rpx;
+  font-size: 28rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+
+}
+.navScroll .navItem .active{
+  border-bottom: 2px solid #d43c33;
+}
+
+.videoScroll{
+  margin-top: 10rpx;
+  height: calc(100vh - 155rpx);
+}
+/* 视频列表 */
+.videoItem{
+  padding: 0 3%;
+}
+.videoItem .common{
+  width: 100%;
+  height: 360rpx;
+  border-radius: 10rpx;
+}
+.videoItem .content{
+  font-size: 26rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  max-width: 500rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.footer{
+  border-top: 1px solid #eee;
+  padding: 20rpx 0;
+}
+.footer .avatar{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.footer .nicName{
+  font-size: 26rpx;
+  vertical-align: middle;
+  margin-left: 20rpx;
+}
+.footer .comments_praised{
+  float: right;
+}
+.comments_praised .btn{
+  display: inline;
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+.comments_praised .btn::after{
+  border: none;
+}
+.comments_praised .item{
+  margin-left: 50rpx;
+  position: relative;
+}
+.comments_praised .item .count{
+  font-size: 15px;
+}
+.notlogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.notlogin text{
+  font-size: 32rpx;
+  margin: 100rpx 0;
+}

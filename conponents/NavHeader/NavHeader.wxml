@@ -1,0 +1,10 @@
+<view class="recommendContainer">
+    <view class="remHeader">
+      <text class="remTitle">{{title}}</text>
+      <view>
+        <text>{{header}}</text>
+        <text class="more">查看更多</text>
+      </view>
+    </view>
+  </view>
+

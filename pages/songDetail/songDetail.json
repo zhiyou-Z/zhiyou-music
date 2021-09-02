@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mp-navigation-bar": "/conponents/navigation-bar/navigationBar"
+  },
+  "navigationStyle": "custom"
+}

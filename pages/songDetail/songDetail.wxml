@@ -1,0 +1,40 @@
+<mp-navigation-bar animated="{{true}}" back="{{true}}"></mp-navigation-bar>
+<view class="songDetailContainer">
+<!-- 背景图片 -->
+  <view class="backView">
+    <image class="blackImage" src="{{song.al.picUrl}}"></image>
+  </view>
+<!-- 图片 -->
+  <view class="musicImg">
+    <image src="{{song.al.picUrl}}"></image>
+  </view>
+  <!-- 音乐名称、作者 -->
+  <view class="songDetailText">
+    <text class="songTitle">{{song.name}}</text>
+    <text class="author">{{song.ar[0].name}}</text>
+    <text class="iconfont icon-xihuan left"></text>
+  </view>
+  <!-- 进度条 -->
+  <view class="progressControl">
+    <!-- <text>00:00</text>
+    <view class="barControl">
+    </view>
+    <text>01:00</text> -->
+    <text>00:00</text>
+    <slider min="0" max="100" backgroundColor="#eee" activeColor="#f5f5f7" block-size="15" block-color="#f5f5f7"/>
+    <text>03:00</text>
+  </view>
+  <!-- 音乐控制区 -->
+  <view class="musicControl">
+    <text class="iconfont icon-shunxubofang"></text>
+    <text class="iconfont icon-shangyiqu" 
+    id="pre" 
+    catchtap="handleSwitch"></text>
+    <text bindtap="musicPlay" 
+    class="iconfont big {{isPlay?'icon-zanting':'icon-bofang'}}"></text>
+    <text class="iconfont icon-xiayiqu"
+    catchtap="handleSwitch"
+    id="next"></text>
+    <text class="iconfont icon-bofangliebiao"></text>
+  </view>
+</view>
